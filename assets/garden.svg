@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc">
+  <title id="title">The garden: three kinds of things grow here</title>
+  <desc id="desc">01 interfaces: a plant whose leaves are little app windows. 02 visual ideas: a flower whose petals are colour swatches. 03 AI builds: a branching tree of glowing nodes.</desc>
+  <defs>
+    <path id="leaf" d="M0 0 C 22 -22, 62 -22, 84 0 C 62 22, 22 22, 0 0 Z"/>
+    <radialGradient id="g1" cx="50%" cy="34%" r="50%"><stop offset="0" stop-color="#A5C48E" stop-opacity=".16"/><stop offset="1" stop-color="#A5C48E" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2" cx="50%" cy="34%" r="50%"><stop offset="0" stop-color="#F09A94" stop-opacity=".14"/><stop offset="1" stop-color="#F09A94" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g3" cx="50%" cy="34%" r="50%"><stop offset="0" stop-color="#E58B68" stop-opacity=".16"/><stop offset="1" stop-color="#E58B68" stop-opacity="0"/></radialGradient>
+  </defs>
+  <style>
+    .serif{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+    .card{fill:#1C1512;stroke:#F6EADB;stroke-opacity:.08}
+    .draw{stroke-dasharray:200;stroke-dashoffset:200;animation:draw 1.3s ease-out forwards}
+    @keyframes draw{to{stroke-dashoffset:0}}
+    .pop{transform-box:fill-box;transform-origin:50% 50%;transform:scale(0);animation:pop .6s cubic-bezier(.3,1.5,.5,1) forwards}
+    @keyframes pop{to{transform:scale(1)}}
+    .leaf{transform-box:fill-box;transform-origin:0% 50%;transform:scale(0);animation:pop .7s cubic-bezier(.3,1.4,.5,1) forwards}
+    .spin{transform-box:fill-box;transform-origin:50% 50%;animation:spin 40s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .pulse{transform-box:fill-box;transform-origin:50% 50%;animation:pulse 2.6s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:.5;transform:scale(.85)}50%{opacity:1;transform:scale(1.15)}}
+    .twinkle{transform-box:fill-box;transform-origin:50% 50%;animation:twinkle 3.2s ease-in-out infinite}
+    @keyframes twinkle{0%,100%{transform:scale(.8) rotate(0);opacity:.7}50%{transform:scale(1.1) rotate(45deg);opacity:1}}
+    .cursor{animation:blink 1.1s steps(1) infinite}
+    @keyframes blink{50%{opacity:0}}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important;transform:none!important;stroke-dashoffset:0!important}}
+  </style>
+
+  <!-- ───────── 01 interfaces ───────── -->
+  <rect class="card" x=".5" y=".5" width="379" height="459" rx="24"/>
+  <rect x="1" y="1" width="378" height="260" rx="24" fill="url(#g1)"/>
+  <ellipse cx="190" cy="238" rx="110" ry="9" fill="#F6EADB" fill-opacity=".05"/>
+  <path d="M80 236 Q 190 230 300 236" fill="none" stroke="#EDB872" stroke-opacity=".35" stroke-width="2" stroke-linecap="round"/>
+  <g fill="none" stroke="#A5C48E" stroke-width="3" stroke-linecap="round">
+    <path class="draw" d="M190 236 C 190 205, 184 175, 190 84"/>
+    <path class="draw" d="M189 192 C 182 190, 176 186, 168 182" style="animation-delay:.6s"/>
+    <path class="draw" d="M191 142 C 198 138, 204 136, 212 136" style="animation-delay:.8s"/>
+  </g>
+  <g class="pop" style="animation-delay:.9s">
+    <rect x="96" y="156" width="72" height="50" rx="8" fill="#2A1F1A" stroke="#A5C48E" stroke-width="2"/>
+    <circle cx="106" cy="166" r="2.5" fill="#F09A94"/><circle cx="114" cy="166" r="2.5" fill="#EDB872"/><circle cx="122" cy="166" r="2.5" fill="#A5C48E"/>
+    <path d="M96 174 H168" stroke="#A5C48E" stroke-opacity=".4"/>
+    <rect x="106" y="182" width="50" height="4" rx="2" fill="#A5C48E" fill-opacity=".55"/>
+    <rect x="106" y="191" width="32" height="4" rx="2" fill="#A5C48E" fill-opacity=".3"/>
+  </g>
+  <g class="pop" style="animation-delay:1.15s">
+    <rect x="212" y="110" width="72" height="50" rx="8" fill="#2A1F1A" stroke="#A5C48E" stroke-width="2"/>
+    <circle cx="222" cy="120" r="2.5" fill="#F09A94"/><circle cx="230" cy="120" r="2.5" fill="#EDB872"/><circle cx="238" cy="120" r="2.5" fill="#A5C48E"/>
+    <path d="M212 128 H284" stroke="#A5C48E" stroke-opacity=".4"/>
+    <rect x="222" y="136" width="26" height="4" rx="2" fill="#A5C48E" fill-opacity=".55"/>
+    <rect class="cursor" x="251" y="133" width="2" height="10" fill="#F6EADB"/>
+    <rect x="222" y="146" width="40" height="4" rx="2" fill="#A5C48E" fill-opacity=".3"/>
+  </g>
+  <g class="pop" style="animation-delay:1.4s">
+    <rect x="160" y="40" width="60" height="44" rx="8" fill="#2A1F1A" stroke="#A5C48E" stroke-width="2"/>
+    <circle cx="170" cy="50" r="2.5" fill="#F09A94"/><circle cx="178" cy="50" r="2.5" fill="#EDB872"/><circle cx="186" cy="50" r="2.5" fill="#A5C48E"/>
+    <path d="M160 58 H220" stroke="#A5C48E" stroke-opacity=".4"/>
+    <rect x="170" y="66" width="38" height="4" rx="2" fill="#A5C48E" fill-opacity=".55"/>
+  </g>
+  <text class="mono" x="36" y="300" font-size="14" fill="#A5C48E">01</text>
+  <text class="serif" x="36" y="344" font-size="34" font-style="italic" fill="#F6EADB">interfaces</text>
+  <text class="serif" x="36" y="380" font-size="16" fill="#CDB9A5">screens that feel like a deep breath —</text>
+  <text class="serif" x="36" y="403" font-size="16" fill="#CDB9A5">calm, clean, and a little bit alive.</text>
+  <text class="mono" x="36" y="436" font-size="12.5" fill="#93806F">→ screens · flows · tiny details</text>
+
+  <!-- ───────── 02 visual ideas ───────── -->
+  <rect class="card" x="410.5" y=".5" width="379" height="459" rx="24"/>
+  <rect x="411" y="1" width="378" height="260" rx="24" fill="url(#g2)"/>
+  <ellipse cx="600" cy="238" rx="110" ry="9" fill="#F6EADB" fill-opacity=".05"/>
+  <path d="M490 236 Q 600 230 710 236" fill="none" stroke="#EDB872" stroke-opacity=".35" stroke-width="2" stroke-linecap="round"/>
+  <path class="draw" d="M600 236 C 600 205, 594 170, 600 112" fill="none" stroke="#A5C48E" stroke-width="3" stroke-linecap="round"/>
+  <g transform="translate(598 204) rotate(-155) scale(.68)"><g class="leaf" style="animation-delay:.7s"><use href="#leaf" fill="#86A872"/></g></g>
+  <g transform="translate(599 172) rotate(-28) scale(.58)"><g class="leaf" style="animation-delay:.95s"><use href="#leaf" fill="#A5C48E"/></g></g>
+  <g transform="translate(600 100)">
+    <g class="pop" style="animation-delay:1.2s">
+      <g class="spin">
+        <rect x="-9" y="-60" width="18" height="40" rx="9" fill="#A5C48E"/>
+        <rect x="-9" y="-60" width="18" height="40" rx="9" fill="#EDB872" transform="rotate(45)"/>
+        <rect x="-9" y="-60" width="18" height="40" rx="9" fill="#E58B68" transform="rotate(90)"/>
+        <rect x="-9" y="-60" width="18" height="40" rx="9" fill="#F09A94" transform="rotate(135)"/>
+        <rect x="-9" y="-60" width="18" height="40" rx="9" fill="#A5C48E" transform="rotate(180)"/>
+        <rect x="-9" y="-60" width="18" height="40" rx="9" fill="#EDB872" transform="rotate(225)"/>
+        <rect x="-9" y="-60" width="18" height="40" rx="9" fill="#E58B68" transform="rotate(270)"/>
+        <rect x="-9" y="-60" width="18" height="40" rx="9" fill="#F09A94" transform="rotate(315)"/>
+        <circle r="14" fill="#F6EADB"/>
+        <circle r="5" fill="#1C1512" fill-opacity=".3"/>
+      </g>
+    </g>
+  </g>
+  <text class="mono" x="446" y="300" font-size="14" fill="#F09A94">02</text>
+  <text class="serif" x="446" y="344" font-size="34" font-style="italic" fill="#F6EADB">visual ideas</text>
+  <text class="serif" x="446" y="380" font-size="16" fill="#CDB9A5">colours, moods and little worlds —</text>
+  <text class="serif" x="446" y="403" font-size="16" fill="#CDB9A5">how a thing feels before what it does.</text>
+  <text class="mono" x="446" y="436" font-size="12.5" fill="#93806F">→ palettes · type · atmosphere</text>
+
+  <!-- ───────── 03 AI builds ───────── -->
+  <rect class="card" x="820.5" y=".5" width="379" height="459" rx="24"/>
+  <rect x="821" y="1" width="378" height="260" rx="24" fill="url(#g3)"/>
+  <ellipse cx="1010" cy="238" rx="110" ry="9" fill="#F6EADB" fill-opacity=".05"/>
+  <path d="M900 236 Q 1010 230 1120 236" fill="none" stroke="#EDB872" stroke-opacity=".35" stroke-width="2" stroke-linecap="round"/>
+  <g fill="none" stroke="#E58B68" stroke-opacity=".6" stroke-width="2.5" stroke-linecap="round">
+    <path class="draw" d="M1010 236 L1010 172"/>
+    <path class="draw" d="M1010 172 L968 134 M1010 172 L1052 134 M1010 172 L1010 112" style="animation-delay:.4s"/>
+    <path class="draw" d="M968 134 L940 92 M968 134 L978 86 M1052 134 L1044 86 M1052 134 L1082 96 M1010 112 L1010 66" style="animation-delay:.8s"/>
+  </g>
+  <g fill="#E58B68">
+    <circle cx="1010" cy="172" r="6"/>
+    <circle cx="968" cy="134" r="7"/>
+    <circle cx="1052" cy="134" r="7"/>
+    <circle cx="1010" cy="112" r="6"/>
+    <circle class="pulse" cx="940" cy="92" r="8"/>
+    <circle class="pulse" cx="978" cy="86" r="6" style="animation-delay:.5s"/>
+    <circle class="pulse" cx="1044" cy="86" r="6" style="animation-delay:1s"/>
+    <circle class="pulse" cx="1082" cy="96" r="8" style="animation-delay:1.5s"/>
+  </g>
+  <g transform="translate(1010 50)">
+    <path class="twinkle" d="M0 -16 C 2 -5, 5 -2, 16 0 C 5 2, 2 5, 0 16 C -2 5, -5 2, -16 0 C -5 -2, -2 -5, 0 -16 Z" fill="#EDB872"/>
+  </g>
+  <text class="mono" x="856" y="300" font-size="14" fill="#E58B68">03</text>
+  <text class="serif" x="856" y="344" font-size="34" font-style="italic" fill="#F6EADB">AI builds</text>
+  <text class="serif" x="856" y="380" font-size="16" fill="#CDB9A5">ideas shaped with prompts and code,</text>
+  <text class="serif" x="856" y="403" font-size="16" fill="#CDB9A5">and a lot of patient trying again.</text>
+  <text class="mono" x="856" y="436" font-size="12.5" fill="#93806F">→ prompts · code · curiosity</text>
+</svg>

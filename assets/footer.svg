@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240" role="img" aria-labelledby="title desc">
+  <title id="title">Thanks for wandering by</title>
+  <desc id="desc">Thanks for wandering by. Still learning, still experimenting, still growing little ideas. A row of grass and small flowers sways along the bottom while fireflies blink.</desc>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="100%" r="70%">
+      <stop offset="0" stop-color="#EDB872" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#EDB872" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="card"><rect width="1200" height="240" rx="28"/></clipPath>
+    <g id="tuft" fill="none" stroke-linecap="round" stroke-width="3">
+      <path d="M0 0 Q -2 -26 -12 -44" stroke="#86A872"/>
+      <path d="M4 0 Q 6 -34 2 -60" stroke="#A5C48E"/>
+      <path d="M8 0 Q 14 -24 24 -38" stroke="#6E9160"/>
+      <path d="M-4 0 Q -12 -18 -24 -26" stroke="#A5C48E" stroke-opacity=".7"/>
+    </g>
+  </defs>
+  <style>
+    .serif{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+    .sw{transform-box:fill-box;transform-origin:50% 100%;animation:sw 4s ease-in-out infinite}
+    @keyframes sw{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+    .fly{animation:fly 3.4s ease-in-out infinite}
+    @keyframes fly{0%,100%{opacity:.1;transform:translate(0,0)}50%{opacity:1;transform:translate(6px,-8px)}}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important}.fly{opacity:.7}}
+  </style>
+  <g clip-path="url(#card)">
+    <rect width="1200" height="240" fill="#1C1512"/>
+    <rect width="1200" height="240" fill="url(#glow)"/>
+
+    <text class="serif" x="600" y="92" font-size="44" font-style="italic" fill="#F6EADB" text-anchor="middle">thanks for wandering by<tspan fill="#F09A94">.</tspan></text>
+    <text class="mono" x="600" y="128" font-size="13" fill="#A08A78" text-anchor="middle">still learning · still experimenting · still growing little ideas</text>
+
+    <!-- fireflies -->
+    <g fill="#EDB872">
+      <circle class="fly" cx="180" cy="160" r="2.5"/>
+      <circle class="fly" cx="330" cy="140" r="2" style="animation-delay:1.1s"/>
+      <circle class="fly" cx="470" cy="172" r="2.2" style="animation-delay:2.2s"/>
+      <circle class="fly" cx="760" cy="150" r="2.5" style="animation-delay:.6s"/>
+      <circle class="fly" cx="905" cy="168" r="2" style="animation-delay:1.7s"/>
+      <circle class="fly" cx="1040" cy="146" r="2.3" style="animation-delay:2.8s"/>
+    </g>
+
+    <!-- small flowers -->
+    <g stroke="#86A872" stroke-width="2" stroke-linecap="round" fill="none">
+      <path d="M115 240 Q 112 214 118 196"/><path d="M402 240 Q 406 218 400 204"/>
+      <path d="M640 240 Q 636 212 642 192"/><path d="M868 240 Q 872 220 866 206"/>
+      <path d="M1128 240 Q 1124 216 1130 198"/>
+    </g>
+    <circle cx="118" cy="194" r="6" fill="#F09A94"/>
+    <circle cx="400" cy="202" r="5" fill="#EDB872"/>
+    <circle cx="642" cy="190" r="6.5" fill="#F09A94"/>
+    <circle cx="866" cy="204" r="5" fill="#E58B68"/>
+    <circle cx="1130" cy="196" r="6" fill="#EDB872"/>
+
+    <!-- grass -->
+    <g transform="translate(30 242)"><use href="#tuft" class="sw"/></g>
+    <g transform="translate(85 242) scale(.8)"><use href="#tuft" class="sw" style="animation-delay:-.5s"/></g>
+    <g transform="translate(150 242) scale(1.15)"><use href="#tuft" class="sw" style="animation-delay:-1.2s"/></g>
+    <g transform="translate(215 242) scale(.9)"><use href="#tuft" class="sw" style="animation-delay:-2s"/></g>
+    <g transform="translate(275 242) scale(1.05)"><use href="#tuft" class="sw" style="animation-delay:-.8s"/></g>
+    <g transform="translate(340 242) scale(.75)"><use href="#tuft" class="sw" style="animation-delay:-2.6s"/></g>
+    <g transform="translate(435 242) scale(1.2)"><use href="#tuft" class="sw" style="animation-delay:-1.6s"/></g>
+    <g transform="translate(500 242) scale(.85)"><use href="#tuft" class="sw" style="animation-delay:-.3s"/></g>
+    <g transform="translate(565 242)"><use href="#tuft" class="sw" style="animation-delay:-3s"/></g>
+    <g transform="translate(690 242) scale(.9)"><use href="#tuft" class="sw" style="animation-delay:-1.4s"/></g>
+    <g transform="translate(750 242) scale(1.15)"><use href="#tuft" class="sw" style="animation-delay:-2.3s"/></g>
+    <g transform="translate(815 242) scale(.8)"><use href="#tuft" class="sw" style="animation-delay:-.9s"/></g>
+    <g transform="translate(920 242) scale(1.05)"><use href="#tuft" class="sw" style="animation-delay:-1.9s"/></g>
+    <g transform="translate(985 242) scale(.85)"><use href="#tuft" class="sw" style="animation-delay:-2.7s"/></g>
+    <g transform="translate(1050 242) scale(1.2)"><use href="#tuft" class="sw" style="animation-delay:-.4s"/></g>
+    <g transform="translate(1170 242) scale(.9)"><use href="#tuft" class="sw" style="animation-delay:-1.1s"/></g>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="239" rx="27.5" fill="none" stroke="#F6EADB" stroke-opacity=".08"/>
+</svg>

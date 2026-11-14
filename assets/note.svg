@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">A tiny truth</title>
+  <desc id="desc">A note on ruled paper, taped up: i don't always know exactly how something will work. i just know i want to see if it can exist. Signed Eleven.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-20%" width="120%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity=".22"/>
+    </filter>
+    <path id="leaf" d="M0 0 C 22 -22, 62 -22, 84 0 C 62 22, 22 22, 0 0 Z"/>
+  </defs>
+  <style>
+    .serif{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+    .paper{transform-box:view-box;transform-origin:600px 150px;animation:settle 1.1s cubic-bezier(.3,1.4,.5,1) forwards;opacity:0}
+    @keyframes settle{from{opacity:0;transform:rotate(-5deg) translateY(16px)}to{opacity:1;transform:rotate(-1.2deg)}}
+    @media (prefers-reduced-motion: reduce){.paper{animation:none;opacity:1;transform:rotate(-1.2deg)}}
+  </style>
+  <g class="paper">
+    <rect x="230" y="50" width="740" height="200" rx="6" fill="#FBF1E2" filter="url(#shadow)"/>
+    <g stroke="#E58B68" stroke-opacity=".28" stroke-width="1">
+      <path d="M230 136 H970"/><path d="M230 180 H970"/><path d="M230 224 H970"/>
+    </g>
+    <path d="M282 50 V250" stroke="#F09A94" stroke-opacity=".75" stroke-width="1.5"/>
+    <text class="serif" x="304" y="130" font-size="26" font-style="italic" fill="#2E2019">i don't always know exactly how something will work.</text>
+    <text class="serif" x="304" y="174" font-size="26" font-style="italic" fill="#2E2019">i just know i want to see if it can exist.</text>
+    <text class="mono" x="944" y="216" font-size="13" fill="#93806F" text-anchor="end">— eleven, somewhere mid-idea</text>
+    <g transform="translate(900 104) rotate(-58) scale(.38)" opacity=".85">
+      <use href="#leaf" fill="#A5C48E"/>
+      <path d="M6 0 L74 0" stroke="#2E2019" stroke-opacity=".3" stroke-width="3"/>
+    </g>
+    <rect x="545" y="34" width="110" height="30" fill="#EDB872" fill-opacity=".8" transform="rotate(4 600 49)"/>
+  </g>
+</svg>

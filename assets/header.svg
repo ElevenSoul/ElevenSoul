@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+  <title id="title">Eleven</title>
+  <desc id="desc">Field notes number eleven. Eleven, a friendly being growing ideas with AI. A small plant grows and blooms on the right.</desc>
+  <defs>
+    <radialGradient id="glow" cx="80%" cy="38%" r="52%">
+      <stop offset="0" stop-color="#EDB872" stop-opacity=".20"/>
+      <stop offset="1" stop-color="#EDB872" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#F6EADB" fill-opacity=".07"/>
+    </pattern>
+    <clipPath id="card"><rect width="1200" height="440" rx="28"/></clipPath>
+    <path id="leaf" d="M0 0 C 22 -22, 62 -22, 84 0 C 62 22, 22 22, 0 0 Z"/>
+  </defs>
+  <style>
+    .serif{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+    .f{opacity:0;animation:up .9s cubic-bezier(.2,.7,.2,1) forwards}
+    @keyframes up{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+    .draw{stroke-dasharray:420;stroke-dashoffset:420;animation:draw 1.6s ease-out forwards}
+    @keyframes draw{to{stroke-dashoffset:0}}
+    .leaf{transform-box:fill-box;transform-origin:0% 50%;transform:scale(0);animation:grow .7s cubic-bezier(.3,1.4,.5,1) forwards}
+    @keyframes grow{to{transform:scale(1)}}
+    .bloom{transform-box:fill-box;transform-origin:50% 50%;transform:scale(0) rotate(-40deg);animation:bloom 1s 2.2s cubic-bezier(.3,1.5,.5,1) forwards}
+    @keyframes bloom{to{transform:scale(1) rotate(0)}}
+    .plant{transform-box:view-box;transform-origin:960px 380px;animation:sway 7s 3.2s ease-in-out infinite}
+    @keyframes sway{0%,100%{transform:rotate(0)}25%{transform:rotate(1.4deg)}75%{transform:rotate(-1.4deg)}}
+    .p{opacity:0;animation:float 6s linear infinite}
+    @keyframes float{0%{opacity:0;transform:translate(0,0)}15%{opacity:.85}100%{opacity:0;transform:translate(16px,-90px)}}
+    .cursor{animation:blink 1.1s steps(1) infinite}
+    @keyframes blink{50%{opacity:0}}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important;opacity:1!important;transform:none!important;stroke-dashoffset:0!important}.p{opacity:0!important}}
+  </style>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="440" fill="#1C1512"/>
+    <rect width="1200" height="440" fill="url(#grid)"/>
+    <rect width="1200" height="440" fill="url(#glow)"/>
+
+    <!-- left: words -->
+    <text class="mono f" x="80" y="96" font-size="15" fill="#EDB872" letter-spacing="1">a little garden · nº 11</text>
+    <text class="serif f" x="74" y="214" font-size="128" font-style="italic" fill="#F6EADB" style="animation-delay:.15s">Eleven<tspan fill="#A5C48E">.</tspan></text>
+    <text class="serif f" x="80" y="266" font-size="26" fill="#E3CFB8" style="animation-delay:.35s">a friendly being, growing little ideas with AI.</text>
+
+    <g class="mono f" font-size="14" style="animation-delay:.55s">
+      <rect x="80" y="300" width="116" height="34" rx="17" fill="none" stroke="#A5C48E" stroke-opacity=".7"/>
+      <text x="138" y="322" text-anchor="middle" fill="#A5C48E">interfaces</text>
+      <rect x="208" y="300" width="133" height="34" rx="17" fill="none" stroke="#EDB872" stroke-opacity=".7"/>
+      <text x="274.5" y="322" text-anchor="middle" fill="#EDB872">visual ideas</text>
+      <rect x="353" y="300" width="124" height="34" rx="17" fill="none" stroke="#E58B68" stroke-opacity=".7"/>
+      <text x="415" y="322" text-anchor="middle" fill="#E58B68">small tools</text>
+    </g>
+
+    <g class="mono f" font-size="14" style="animation-delay:.75s">
+      <text x="80" y="390" fill="#A08A78"><tspan fill="#A5C48E">~/eleven</tspan> $ water --gently ./ideas</text>
+      <rect class="cursor" x="363" y="377" width="8" height="16" fill="#A5C48E"/>
+    </g>
+
+    <!-- right: soil -->
+    <path class="draw" d="M780 382 C 840 376, 900 388, 960 381 S 1080 375, 1140 383" fill="none" stroke="#EDB872" stroke-opacity=".45" stroke-width="2" stroke-linecap="round"/>
+    <g fill="#EDB872" fill-opacity=".25">
+      <ellipse cx="900" cy="396" rx="5" ry="3"/>
+      <ellipse cx="1012" cy="400" rx="7" ry="3.5"/>
+      <ellipse cx="1080" cy="394" rx="4" ry="2.5"/>
+      <ellipse cx="840" cy="400" rx="3" ry="2"/>
+    </g>
+
+    <!-- right: plant -->
+    <g class="plant">
+      <path class="draw" d="M960 381 C 952 330, 990 300, 972 250 S 945 180, 968 130" fill="none" stroke="#A5C48E" stroke-width="4" stroke-linecap="round" style="animation-delay:.4s"/>
+
+      <g transform="translate(962 334) rotate(-160) scale(.9)">
+        <g class="leaf" style="animation-delay:1s"><use href="#leaf" fill="#86A872"/><path d="M6 0 L74 0" stroke="#1C1512" stroke-opacity=".35" stroke-width="1.5"/></g>
+      </g>
+      <g transform="translate(980 282) rotate(-24)">
+        <g class="leaf" style="animation-delay:1.3s"><use href="#leaf" fill="#A5C48E"/><path d="M6 0 L74 0" stroke="#1C1512" stroke-opacity=".35" stroke-width="1.5"/></g>
+      </g>
+      <g transform="translate(958 210) rotate(-150) scale(.72)">
+        <g class="leaf" style="animation-delay:1.6s"><use href="#leaf" fill="#A5C48E"/><path d="M6 0 L74 0" stroke="#1C1512" stroke-opacity=".35" stroke-width="1.5"/></g>
+      </g>
+      <g transform="translate(964 168) rotate(-38) scale(.55)">
+        <g class="leaf" style="animation-delay:1.85s"><use href="#leaf" fill="#86A872"/><path d="M6 0 L74 0" stroke="#1C1512" stroke-opacity=".35" stroke-width="1.5"/></g>
+      </g>
+
+      <g transform="translate(968 128)">
+        <g class="bloom">
+          <g fill="#F09A94">
+            <ellipse cx="0" cy="-24" rx="13" ry="24"/>
+            <ellipse cx="0" cy="-24" rx="13" ry="24" transform="rotate(60)"/>
+            <ellipse cx="0" cy="-24" rx="13" ry="24" transform="rotate(120)"/>
+            <ellipse cx="0" cy="-24" rx="13" ry="24" transform="rotate(180)"/>
+            <ellipse cx="0" cy="-24" rx="13" ry="24" transform="rotate(240)"/>
+            <ellipse cx="0" cy="-24" rx="13" ry="24" transform="rotate(300)"/>
+          </g>
+          <g fill="#F9CBC2">
+            <ellipse cx="0" cy="-14" rx="7" ry="13" transform="rotate(30)"/>
+            <ellipse cx="0" cy="-14" rx="7" ry="13" transform="rotate(150)"/>
+            <ellipse cx="0" cy="-14" rx="7" ry="13" transform="rotate(270)"/>
+          </g>
+          <circle r="11" fill="#EDB872"/>
+          <circle r="4" fill="#1C1512" fill-opacity=".35"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- pollen -->
+    <g fill="#EDB872">
+      <circle class="p" cx="940" cy="120" r="2.5" style="animation-delay:3s"/>
+      <circle class="p" cx="990" cy="110" r="2" style="animation-delay:4.2s"/>
+      <circle class="p" cx="965" cy="96" r="1.8" style="animation-delay:5.1s"/>
+      <circle class="p" cx="1004" cy="140" r="2.2" style="animation-delay:6.3s"/>
+      <circle class="p" cx="926" cy="150" r="1.6" style="animation-delay:7.4s"/>
+    </g>
+
+    <!-- annotation -->
+    <g class="f" style="animation-delay:2.8s">
+      <text class="serif" x="872" y="74" font-size="19" font-style="italic" fill="#EDB872" text-anchor="end">an idea,</text>
+      <text class="serif" x="872" y="98" font-size="19" font-style="italic" fill="#EDB872" text-anchor="end">mid-growth</text>
+      <path d="M880 84 C 900 82, 912 92, 920 106" fill="none" stroke="#EDB872" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M913 103 L 921 108 L 922 98" fill="none" stroke="#EDB872" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="439" rx="27.5" fill="none" stroke="#F6EADB" stroke-opacity=".08"/>
+</svg>

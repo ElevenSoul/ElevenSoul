@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">How an idea grows</title>
+  <desc id="desc">Five stages along a line of soil. 01 seed: a random thought. 02 sprout: a prompt. 03 leaves: shaping it. 04 weather: break it, fix it, with an arrow looping back labelled not yet. 05 bloom: it exists now, reached by an arrow labelled oh, it works.</desc>
+  <defs>
+    <path id="leaf" d="M0 0 C 22 -22, 62 -22, 84 0 C 62 22, 22 22, 0 0 Z"/>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#F6EADB" fill-opacity=".06"/></pattern>
+    <clipPath id="card"><rect width="1200" height="340" rx="28"/></clipPath>
+  </defs>
+  <style>
+    .serif{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+    .f{opacity:0;animation:up .8s cubic-bezier(.2,.7,.2,1) forwards}
+    @keyframes up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+    .flow{stroke-dasharray:5 7;animation:flow 1.2s linear infinite}
+    @keyframes flow{to{stroke-dashoffset:-12}}
+    .rain{animation:rain 1.4s linear infinite;opacity:0}
+    @keyframes rain{0%{opacity:0;transform:translateY(0)}20%{opacity:.9}100%{opacity:0;transform:translateY(46px)}}
+    .bubble{animation:bob 3s ease-in-out infinite}
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+    .halo{transform-box:fill-box;transform-origin:50% 50%;animation:halo 3s ease-in-out infinite}
+    @keyframes halo{0%,100%{opacity:.10;transform:scale(.9)}50%{opacity:.24;transform:scale(1.1)}}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important;opacity:1!important;transform:none!important}.rain{opacity:.6!important}}
+  </style>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="340" fill="#1C1512"/>
+    <rect width="1200" height="340" fill="url(#grid)"/>
+
+    <!-- soil -->
+    <path d="M40 237 C 300 230, 520 242, 760 235 S 1060 231, 1160 237" fill="none" stroke="#EDB872" stroke-opacity=".4" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- connectors -->
+    <g fill="none" stroke="#EDB872" stroke-opacity=".5" stroke-width="1.5" stroke-linecap="round">
+      <path class="flow" d="M200 200 H292"/><path d="M286 195 L293 200 L286 205"/>
+      <path class="flow" d="M435 200 H527"/><path d="M521 195 L528 200 L521 205"/>
+      <path class="flow" d="M670 200 H762"/><path d="M756 195 L763 200 L756 205"/>
+      <path class="flow" d="M905 200 H997"/><path d="M991 195 L998 200 L991 205"/>
+      <path class="flow" d="M822 112 C 790 44, 652 44, 618 116"/><path d="M612 106 L617 117 L627 111"/>
+    </g>
+    <text class="mono" x="720" y="40" font-size="12.5" fill="#EDB872" fill-opacity=".8" text-anchor="middle">not yet</text>
+    <text class="mono" x="951" y="186" font-size="12.5" fill="#EDB872" fill-opacity=".8" text-anchor="middle">oh. it works.</text>
+
+    <!-- 01 seed -->
+    <g class="f" style="animation-delay:.2s">
+      <ellipse cx="130" cy="229" rx="13" ry="8.5" fill="#EDB872" transform="rotate(-20 130 229)"/>
+      <path d="M124 226 Q 130 222 137 225" fill="none" stroke="#1C1512" stroke-opacity=".3" stroke-width="1.5" stroke-linecap="round"/>
+      <g class="bubble" fill="none" stroke="#EDB872" stroke-width="1.5">
+        <circle cx="142" cy="206" r="3"/>
+        <circle cx="152" cy="190" r="4.5"/>
+        <circle cx="168" cy="168" r="8"/>
+      </g>
+      <text class="serif" x="130" y="286" font-size="21" font-style="italic" fill="#F6EADB" text-anchor="middle">a random thought</text>
+      <text class="mono" x="130" y="312" font-size="12" fill="#93806F" text-anchor="middle">01 · seed</text>
+    </g>
+
+    <!-- 02 sprout -->
+    <g class="f" style="animation-delay:.6s">
+      <path d="M365 236 C 365 222, 362 212, 365 196" fill="none" stroke="#A5C48E" stroke-width="3" stroke-linecap="round"/>
+      <g transform="translate(365 199) rotate(-150) scale(.34)"><use href="#leaf" fill="#A5C48E"/></g>
+      <g transform="translate(366 199) rotate(-30) scale(.34)"><use href="#leaf" fill="#86A872"/></g>
+      <text class="serif" x="365" y="286" font-size="21" font-style="italic" fill="#F6EADB" text-anchor="middle">a prompt</text>
+      <text class="mono" x="365" y="312" font-size="12" fill="#93806F" text-anchor="middle">02 · sprout</text>
+    </g>
+
+    <!-- 03 leaves -->
+    <g class="f" style="animation-delay:1s">
+      <path d="M600 236 C 596 200, 610 180, 600 138" fill="none" stroke="#A5C48E" stroke-width="3" stroke-linecap="round"/>
+      <g transform="translate(599 216) rotate(-160) scale(.5)"><use href="#leaf" fill="#86A872"/></g>
+      <g transform="translate(604 190) rotate(-25) scale(.55)"><use href="#leaf" fill="#A5C48E"/></g>
+      <g transform="translate(601 162) rotate(-150) scale(.44)"><use href="#leaf" fill="#A5C48E"/></g>
+      <g transform="translate(600 144) rotate(-40) scale(.34)"><use href="#leaf" fill="#86A872"/></g>
+      <text class="serif" x="600" y="286" font-size="21" font-style="italic" fill="#F6EADB" text-anchor="middle">shaping it</text>
+      <text class="mono" x="600" y="312" font-size="12" fill="#93806F" text-anchor="middle">03 · leaves</text>
+    </g>
+
+    <!-- 04 weather -->
+    <g class="f" style="animation-delay:1.4s">
+      <g fill="#CDB9A5" fill-opacity=".35">
+        <circle cx="826" cy="92" r="14"/><circle cx="846" cy="84" r="18"/><circle cx="866" cy="94" r="12"/>
+        <rect x="812" y="92" width="66" height="14" rx="7"/>
+      </g>
+      <g stroke="#A9B9DA" stroke-width="2" stroke-linecap="round">
+        <path class="rain" d="M824 114 v9"/>
+        <path class="rain" d="M840 116 v9" style="animation-delay:.45s"/>
+        <path class="rain" d="M856 112 v9" style="animation-delay:.9s"/>
+        <path class="rain" d="M870 116 v9" style="animation-delay:.25s"/>
+      </g>
+      <path d="M835 236 C 833 200, 842 172, 860 164 C 874 158, 882 170, 878 184" fill="none" stroke="#A5C48E" stroke-opacity=".75" stroke-width="3" stroke-linecap="round"/>
+      <g transform="translate(835 212) rotate(165) scale(.45)"><use href="#leaf" fill="#86A872" fill-opacity=".7"/></g>
+      <g transform="translate(840 186) rotate(25) scale(.42)"><use href="#leaf" fill="#A5C48E" fill-opacity=".7"/></g>
+      <circle cx="878" cy="190" r="7" fill="#F09A94" fill-opacity=".55"/>
+      <text class="serif" x="835" y="286" font-size="21" font-style="italic" fill="#F6EADB" text-anchor="middle">break it, fix it</text>
+      <text class="mono" x="835" y="312" font-size="12" fill="#93806F" text-anchor="middle">04 · weather</text>
+    </g>
+
+    <!-- 05 bloom -->
+    <g class="f" style="animation-delay:1.8s">
+      <circle class="halo" cx="1070" cy="108" r="48" fill="#F09A94"/>
+      <path d="M1070 236 C 1064 200, 1080 170, 1070 116" fill="none" stroke="#A5C48E" stroke-width="3" stroke-linecap="round"/>
+      <g transform="translate(1069 214) rotate(-160) scale(.55)"><use href="#leaf" fill="#86A872"/></g>
+      <g transform="translate(1074 182) rotate(-25) scale(.6)"><use href="#leaf" fill="#A5C48E"/></g>
+      <g transform="translate(1071 150) rotate(-150) scale(.45)"><use href="#leaf" fill="#A5C48E"/></g>
+      <g transform="translate(1070 108)" fill="#F09A94">
+        <ellipse cy="-18" rx="10" ry="18"/>
+        <ellipse cy="-18" rx="10" ry="18" transform="rotate(60)"/>
+        <ellipse cy="-18" rx="10" ry="18" transform="rotate(120)"/>
+        <ellipse cy="-18" rx="10" ry="18" transform="rotate(180)"/>
+        <ellipse cy="-18" rx="10" ry="18" transform="rotate(240)"/>
+        <ellipse cy="-18" rx="10" ry="18" transform="rotate(300)"/>
+        <circle r="8" fill="#EDB872"/>
+      </g>
+      <text class="serif" x="1070" y="286" font-size="21" font-style="italic" fill="#F6EADB" text-anchor="middle">it exists now</text>
+      <text class="mono" x="1070" y="312" font-size="12" fill="#93806F" text-anchor="middle">05 · bloom</text>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="339" rx="27.5" fill="none" stroke="#F6EADB" stroke-opacity=".08"/>
+</svg>
