@@ -5,45 +5,59 @@
 <br/>
 
 <p align="center">
-  <i>oh, hello — come on in.</i>
-  <br/><br/>
-  i'm <b>Eleven</b>. i use AI to build the things i wish existed:<br/>
-  soft interfaces, visual ideas, and small tools that make a day a little nicer.
-  <br/><br/>
-  i'm not a genius developer, and i'm not pretending to be.<br/>
-  i think of this place as a garden. ideas go in as seeds,<br/>
-  and with enough prompts, patience and curiosity, some of them bloom.
-  <br/><br/>
-  <sub>make yourself at home. wander around. nothing here bites.</sub>
+  <i>oh — hi. you found the garden.</i>
+</p>
+
+<p align="center">
+  i'm <b>Eleven</b>.<br/>
+  a while ago i noticed my head was full of ideas with nowhere to go —<br/>
+  little interfaces, half-dreamed tools, moods i wanted to see on a screen.<br/>
+  i couldn't build most of them on my own. so i started planting them anyway,<br/>
+  with AI as my watering can.
+</p>
+
+<p align="center">
+  some didn't make it. some are still sprouting. a few actually bloomed.<br/>
+  this is where all of them live.
+</p>
+
+<p align="center">
+  <sub>take your time. the path is a little crooked, but it's friendly.</sub>
 </p>
 
 <br/>
 
 ## the garden
 
-<sub>three kinds of things grow here</sub>
+<sub>three beds, three kinds of seeds</sub>
 
 <p align="center">
   <img src="./assets/garden.svg" width="100%" alt="01 interfaces: a plant whose leaves are little app windows. 02 visual ideas: a flower whose petals are colour swatches. 03 AI builds: a branching tree of glowing nodes." />
+</p>
+
+<p align="center">
+  <sub><i>i didn't plan these beds. i just kept noticing what i reached for when nobody was asking me to make anything.</i></sub>
 </p>
 
 <br/>
 
 ## how an idea grows
 
-<sub>every single project here took this walk</sub>
+<sub>it's the same walk, every single time</sub>
 
 <p align="center">
-  <img src="./assets/growth.svg" width="100%" alt="seed (a random thought), sprout (a prompt), leaves (shaping it), weather (break it, fix it — and sometimes back to shaping), bloom (it exists now)" />
+  <img src="./assets/growth.svg" width="100%" alt="seed (a stray thought), sprout (a first prompt), leaves (shaping it), weather (break it, fix it — and sometimes back to shaping), bloom (it exists now)" />
 </p>
 
 <p align="center">
-  <sub><i>most ideas spend a long time in the weather. that's okay — it's where the roots get strong.</i></sub>
+  most ideas spend a long time out in the rain.<br/>
+  i used to think that meant i was doing it wrong.<br/>
+  now i think that's just where the roots grow.
 </p>
 
 <br/>
 
-## this season
+## what i'm tending this season
 
 <table>
   <tr>
@@ -52,21 +66,21 @@
   </tr>
   <tr>
     <td valign="top">
-      <sub>things i'm making more room for</sub>
+      <sub>the things i'm making more room for</sub>
       <br/><br/>
-      learning out loud, in public<br/>
-      shipping small, honest, slightly weird things<br/>
-      asking AI kinder, better questions<br/>
-      caring how things <i>feel</i>, not just how they work
+      learning out loud, even when i'm unsure<br/>
+      small honest things over big perfect ones<br/>
+      better questions — for AI, and for me<br/>
+      making things that feel kind to use
       <br/><br/>
     </td>
     <td valign="top">
-      <sub>things i'm letting go of — they still feed the soil</sub>
+      <sub>the things i'm letting go of. they still feed the soil.</sub>
       <br/><br/>
-      pretending to know everything<br/>
-      waiting until i "know enough" to start<br/>
-      comparing my day one to someone's year ten<br/>
-      building things nobody (including me) wanted
+      the idea that i need to know everything first<br/>
+      waiting for permission to start<br/>
+      measuring my first year against someone's tenth<br/>
+      building things nobody (me included) wanted
       <br/><br/>
     </td>
   </tr>
@@ -76,50 +90,45 @@
 
 ## the shed
 
-<sub>the tools i reach for most</sub>
+<sub>every gardener has one. this is what's hanging on my walls.</sub>
 
 <p align="center">
   <br/>
   <img src="https://skillicons.dev/icons?i=react,ts,tailwind,nodejs,supabase,vercel,github,figma&perline=8" alt="React, TypeScript, Tailwind, Node.js, Supabase, Vercel, GitHub, Figma" />
   <br/><br/>
-  <sub>…and AI — part sketchbook, part co-pilot, part very patient teacher.</sub>
-</p>
-
-<br/>
-
-## rainfall
-
-<sub>how often i've been out tending things lately</sub>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ElevenSoul&bg_color=1C1512&color=F6EADB&title_color=EDB872&line=EDB872&point=F09A94&area=true&area_color=EDB872&hide_border=true&radius=24&custom_title=rainfall%20in%20the%20garden" width="100%" alt="ElevenSoul's recent contribution activity" />
+  <sub>and leaning by the door: AI. part sketchbook, part co-pilot, part very patient teacher.</sub>
 </p>
 
 <br/>
 
 ## pinned to the shed door
 
+<sub>the one thing i try to remember on the days nothing grows</sub>
+
 <p align="center">
   <img src="./assets/note.svg" width="100%" alt="A taped-up note: i don't always know exactly how something will work. i just know i want to see if it can exist. — eleven" />
 </p>
 
 <details>
-<summary>&nbsp;<b>a little more about growing with AI</b>&nbsp;<sub>(open me)</sub></summary>
+<summary>&nbsp;<b>why i garden with AI</b>&nbsp;<sub>(open me)</sub></summary>
 <br/>
 
-i build with AI, and i'm happy to say so.
+people sometimes ask if building with AI is cheating. here's how it feels from the inside:
 
-it doesn't replace the taste, the choices, or the long evenings of *"hmm, no, not quite like that."*
-it just means more of the ideas in my head get to leave it, and become something you can actually click on.
+**AI is the watering can, not the gardener.**
 
-if you're just starting out too: hi. you're doing fine. plant something small.
+it doesn't know which seeds are worth planting. it can't tell when something feels slightly off, or why a button should be just a little softer, or when an idea deserves one more try. that part is still me.
+
+what it gives me is reach. more of the ideas in my head get to leave it, and turn into something you can actually click on.
+
+and if you're just starting out too — hi. you're not behind. plant something small and see what happens.
 
 </details>
 
 <br/>
 
 <p align="center">
-  <img src="./assets/footer.svg" width="100%" alt="Thanks for wandering by. Still learning, still experimenting, still growing little ideas." />
+  <img src="./assets/footer.svg" width="100%" alt="Thanks for wandering by. The gate's always open — come back and see what's bloomed." />
 </p>
 
 <p align="center">
